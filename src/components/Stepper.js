@@ -74,14 +74,14 @@ return (
   
   
   <div className='relative flex flex-col items-center'>
-  <div className='border-2 border-gray-300 h-12 w-12 flex items-center justify-center py-3 opacity-0'>
+  <div className='border-1 border-gray-300 h-3 w-3 flex items-center justify-center'>
                 
   </div>
   {/* <div className='absolute top-0 text-center mt-16 w-32 text-xs font-medium uppercase'>
     fff
   </div> */}
 </div>
-<div className={`flex-auto border-t-4 transition duration-500 ease-in-out ${step.completed? `border-green-600`:`border-gray`}`}>   
+<div className={`flex-auto border-t-4 rounded-3xl transition duration-100 ease-in-out ${step.completed? `border-green-600`:`border-gray`}`}>   
 </div>
 
 </div>

@@ -32,10 +32,10 @@ export default function Form() {
 
   newStep > 0 && newStep< steps.length && setCurrentStep(newStep);
  }
- 
+
 
   return (
-    <div className="md:w-1/2 mx-auto shadow-xl rounded-2xl pb-2 bg-white">
+    <div className="md:w-1/2 mx-auto pb-2 bg-white flex flex-col">
       <div className='container horizontal mt-5'>
       < Stepper  steps={steps} currentStep={currentStep}/>
       <div className='my-10 p-10'>
