@@ -31,7 +31,7 @@ return (
           Years of experience with this skill
         </div>
         
-        <button  className={`bg-transparent py-2 px-4 m-2 border rounded-lg`}>
+        <button  className={`bg-transparent py-2 px-4 m-2 ml-20 border rounded-lg`}>
          less than 1 year
         </button>
 
