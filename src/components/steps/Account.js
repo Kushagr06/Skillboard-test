@@ -1,8 +1,13 @@
 import React,{useContext, useMemo} from 'react'
 import { StepperContext } from '../context/StepperContext'
-// import {BsFillPersonFill} from "react-icons/bs";
+import {  FaUser } from 'react-icons/fa';
+import {  GrMail } from 'react-icons/gr';
+import {  MdLocationOn } from 'react-icons/md';
+
 import Select from 'react-select'
 import countryList from 'react-select-country-list'
+
+
 
 
 export default function Account() {
@@ -23,15 +28,16 @@ const handleChange=(e)=>{
       </div>
       <div>
         <div className='text-left h-6 mt-3 text-gray-400 text-xl leading-8 pb-10'>
-          First name
+       First Name 
         </div>
         <div className='bg-white my-2 p-1 flex border border-gray-200 rounded'>
+        <FaUser className='mt-2 w-5 opacity-20'/>
           <input
           onChange={handleChange}
           value={userData["firstname"] || " "}
           name="firstname"
           placeholder='Firstname'
-          className='p-1 px-2 appearance-none outline-none w-full text-gray-800' 
+          className=' p-1 px-2 appearance-none outline-none w-full text-gray-800' 
           />
         </div>
 
@@ -39,6 +45,7 @@ const handleChange=(e)=>{
           Last name
         </div>
         <div className='bg-white my-2 p-1 flex border border-gray-200 rounded'>
+        <FaUser className='mt-2 w-5 opacity-20'/>
           <input
           onChange={handleChange}
           value={userData["lastname"] || " "}
@@ -52,6 +59,7 @@ const handleChange=(e)=>{
           Email
         </div>
         <div className='bg-white my-2 p-1 flex border border-gray-200 rounded'>
+        <GrMail className='mt-2 w-5 opacity-20'/>
           <input
           onChange={handleChange}
           value={userData["email"] || " "}
@@ -67,12 +75,12 @@ const handleChange=(e)=>{
 
   
   <div className='bg-white my-2 p-1 flex border border-gray-200 rounded'>       
-          
+  <MdLocationOn className='mt-5 w-4 opacity-20'/>        
 <Select options={options}  onChange={handleChange}
           value={userData["country"] || " "}
  name="country"
  placeholder=' Select country...'
-id="countries" className=" text-left block w-full p-2.5  dark:placeholder-gray-400" />
+id="countries" className=" text-left block w-full p-2.5 border border-transparent dark:placeholder-gray-400" />
   
 
 
