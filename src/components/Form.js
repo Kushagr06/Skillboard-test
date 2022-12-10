@@ -11,7 +11,7 @@ export default function Form() {
     1,2,3,4,5
   ];
   
-  const [currentStep, setCurrentStep] = useState(1);
+ const [currentStep, setCurrentStep] = useState(1);
  const[userData, setUserData]= useState('');
  const [finalData, setFinalData]= useState([]);
 
@@ -38,6 +38,7 @@ export default function Form() {
     <div className="md:w-1/2 mx-auto pb-2 bg-white flex flex-col">
       <div className='container horizontal mt-5'>
       < Stepper  steps={steps} currentStep={currentStep}/>
+      {/* Display Components */}
       <div className='my-10 p-10'>
         <StepperContext.Provider value ={{
           userData,

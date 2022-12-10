@@ -1,9 +1,6 @@
 import React from 'react'
 
 
-
-
-
 const StepperControl = ({handleClick, currentStep, steps}) => {
   // const [word, setWord] = useState("Get Started");
 
@@ -11,8 +8,10 @@ const StepperControl = ({handleClick, currentStep, steps}) => {
     switch(currentStep){
       case 1:
         return "Get Started"
-      case steps.length-1:
+      case steps.length-2:
          return "Submit"
+      case steps.length-1:
+        return "Submitted"
       default:
         return "Next"
     }
