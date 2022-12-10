@@ -5,6 +5,7 @@ import { StepperContext } from './context/StepperContext'
 import Account from './steps/Account'
 import Details from './steps/Details'
 import Final from './steps/Final'
+import Submitted from './steps/Submitted'
 
 export default function Form() {
   const steps=[
@@ -23,6 +24,8 @@ export default function Form() {
          return <Details />
       case 3:
          return <Final />
+      case 4:
+         return <Submitted />
       default:
     }
   }
@@ -50,6 +53,8 @@ export default function Form() {
         </StepperContext.Provider>
       </div>
       </div>
+
+      
       <StepperControl
       handleClick={handleClick}
       currentStep={currentStep}
