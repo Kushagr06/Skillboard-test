@@ -27,8 +27,8 @@ return (
           />
         </div>
 
-        <div  className='text-center h-6 mt-3  text-xl leading-8 pb-10 pt-10'>
-          Years of experience with this skill
+        <div  className=' flex flex-col text-center h-6 mt-3  text-xl leading-8 pb-10 pt-10'>
+          Years of experience with this skill<br/>
         </div>
         
         <button  className={`bg-transparent py-2 px-4 m-2 ml-20 border rounded-lg`}>
